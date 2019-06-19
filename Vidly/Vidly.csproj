@@ -170,27 +170,54 @@
     <Compile Include="Migrations\201906180355528_InitialModel.Designer.cs">
       <DependentUpon>201906180355528_InitialModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201906190818073_AddIsSubscribedToCustomer.cs" />
+    <Compile Include="Migrations\201906190818073_AddIsSubscribedToCustomer.Designer.cs">
+      <DependentUpon>201906190818073_AddIsSubscribedToCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906190822095_AddMembershipType.cs" />
+    <Compile Include="Migrations\201906190822095_AddMembershipType.Designer.cs">
+      <DependentUpon>201906190822095_AddMembershipType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906190848126_PopulateMembershipTypes.cs" />
+    <Compile Include="Migrations\201906190848126_PopulateMembershipTypes.Designer.cs">
+      <DependentUpon>201906190848126_PopulateMembershipTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906190854342_ApplyAnnotationsToCustomerName.cs" />
+    <Compile Include="Migrations\201906190854342_ApplyAnnotationsToCustomerName.Designer.cs">
+      <DependentUpon>201906190854342_ApplyAnnotationsToCustomerName.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\Customer.cs" />
-    <Compile Include="Models\IdentityModels.cs" />
-    <Compile Include="Models\ManageViewModels.cs" />
-    <Compile Include="Models\Movie.cs" />
+    <Compile Include="Migrations\Models\AccountViewModels.cs" />
+    <Compile Include="Migrations\Models\Customer.cs" />
+    <Compile Include="Migrations\Models\IdentityModels.cs" />
+    <Compile Include="Migrations\Models\ManageViewModels.cs" />
+    <Compile Include="Migrations\Models\MembershipType.cs" />
+    <Compile Include="Migrations\Models\Movie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModels\RandomMoviewViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-lumen.css" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -247,15 +274,24 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201906180355528_InitialModel.resx">
       <DependentUpon>201906180355528_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906190818073_AddIsSubscribedToCustomer.resx">
+      <DependentUpon>201906190818073_AddIsSubscribedToCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906190822095_AddMembershipType.resx">
+      <DependentUpon>201906190822095_AddMembershipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906190848126_PopulateMembershipTypes.resx">
+      <DependentUpon>201906190848126_PopulateMembershipTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906190854342_ApplyAnnotationsToCustomerName.resx">
+      <DependentUpon>201906190854342_ApplyAnnotationsToCustomerName.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
